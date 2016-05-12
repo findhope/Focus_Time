@@ -1,0 +1,33 @@
+//
+//  PrefixHeader.pch
+//  Focus_Time
+//
+//  Created by MitnickKevin on 16/4/11.
+//  Copyright © 2016年 SWUST. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+ZHYExtension.h"
+#import "UINavigationController+ZHYExtension.h"
+#import <Masonry.h>
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+static NSString *ID = @"cell";
+static NSString *BaseCell = @"BaseCell";
+
+#define IMAGE_COUNT 5
+#define ZHYKeyWindow [UIApplication sharedApplication].keyWindow
+#define ZHYScreenBounds [UIScreen mainScreen].bounds
+#define ZHYScreenW ZHYScreenBounds.size.width
+#define ZHYScreenH ZHYScreenBounds.size.height
+#define kARGBColor(a, r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+#define TT_FLIP_TRANSITION_DURATION 0.4
+
+// block弱引用
+#define ZHYWeakSelf __weak typeof(self) weakSelf = self;
+
+#endif /* PrefixHeader_pch */

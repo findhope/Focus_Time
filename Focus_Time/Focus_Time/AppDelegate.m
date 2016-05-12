@@ -2,11 +2,12 @@
 //  AppDelegate.m
 //  Focus_Time
 //
-//  Created by MitnickKevin on 16/5/12.
+//  Created by MitnickKevin on 16/4/11.
 //  Copyright © 2016年 SWUST. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "ZHYMainCollectionController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    self.window.rootViewController = [[ZHYMainCollectionController alloc] init];
+    
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 

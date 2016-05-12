@@ -7,88 +7,380 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A1E05B41CE47A3F004334BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1E05B31CE47A3F004334BC /* main.m */; };
-		0A1E05B71CE47A3F004334BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1E05B61CE47A3F004334BC /* AppDelegate.m */; };
-		0A1E05BA1CE47A3F004334BC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1E05B91CE47A3F004334BC /* ViewController.m */; };
-		0A1E05BD1CE47A3F004334BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A1E05BB1CE47A3F004334BC /* Main.storyboard */; };
-		0A1E05BF1CE47A3F004334BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A1E05BE1CE47A3F004334BC /* Assets.xcassets */; };
-		0A1E05C21CE47A3F004334BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A1E05C01CE47A3F004334BC /* LaunchScreen.storyboard */; };
+		0A21D0C41CBB4D490098651A /* UIView+ZHYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A21D0C31CBB4D490098651A /* UIView+ZHYExtension.m */; };
+		0A21D0CB1CBB50E80098651A /* ZHYMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A21D0CA1CBB50E80098651A /* ZHYMenuButton.m */; };
+		0A21D0CF1CBB51670098651A /* ZHYSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A21D0CD1CBB51670098651A /* ZHYSettingController.m */; };
+		0A21D0D01CBB51670098651A /* ZHYSettingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D0CE1CBB51670098651A /* ZHYSettingController.xib */; };
+		0A21D0D71CBB5DB90098651A /* ZHYSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A21D0D51CBB5DB90098651A /* ZHYSettingCell.m */; };
+		0A21D0D81CBB5DB90098651A /* ZHYSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D0D61CBB5DB90098651A /* ZHYSettingCell.xib */; };
+		0A21D0DD1CBB5E960098651A /* ZHYSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A21D0DC1CBB5E960098651A /* ZHYSettingItem.m */; };
+		0A21D0E01CBB7C320098651A /* ZHYNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A21D0DF1CBB7C320098651A /* ZHYNavController.m */; };
+		0A2523931CBDF83D00437C00 /* ZHYSettingBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2523921CBDF83D00437C00 /* ZHYSettingBaseCell.m */; };
+		0A2523961CBDF9D500437C00 /* ZHYGroupItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2523951CBDF9D500437C00 /* ZHYGroupItem.m */; };
+		0A2523991CBE05EB00437C00 /* ZHYArrowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2523981CBE05EB00437C00 /* ZHYArrowItem.m */; };
+		0A25239C1CBE073900437C00 /* ZHYSwitchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A25239B1CBE073900437C00 /* ZHYSwitchItem.m */; };
+		0A2C01BF1CC739A3006CFB6D /* ZHYCollectionCellModelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C01BE1CC739A3006CFB6D /* ZHYCollectionCellModelItem.m */; };
+		0A2C01C21CC76743006CFB6D /* ZHYTimeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C01C11CC76743006CFB6D /* ZHYTimeLabel.m */; };
+		0A2C01C51CC7715F006CFB6D /* ZHYCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C01C41CC7715F006CFB6D /* ZHYCalendarView.m */; };
+		0A57FE6E1CC8CF820075ED1F /* UINavigationController+ZHYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A57FE6D1CC8CF820075ED1F /* UINavigationController+ZHYExtension.m */; };
+		0A6D48D01CC4985A000BB4D4 /* ZHYMainCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D48CF1CC4985A000BB4D4 /* ZHYMainCollectionController.m */; };
+		0A6D48D81CC4BCBE000BB4D4 /* ZHYCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D48D71CC4BCBE000BB4D4 /* ZHYCollectionViewCell.m */; };
+		0A82D02B1CC8DCAC00E86524 /* ZHYTimeCountDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A82D02A1CC8DCAC00E86524 /* ZHYTimeCountDownView.m */; };
+		0A82D02D1CC8E40C00E86524 /* DefaultThin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A82D02C1CC8E40C00E86524 /* DefaultThin.otf */; };
+		0ACE53E81CBB446400C20F8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE53E71CBB446400C20F8F /* main.m */; };
+		0ACE53EB1CBB446400C20F8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE53EA1CBB446400C20F8F /* AppDelegate.m */; };
+		0ACE53F31CBB446400C20F8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE53F21CBB446400C20F8F /* Assets.xcassets */; };
+		0ACE53F61CBB446400C20F8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE53F41CBB446400C20F8F /* LaunchScreen.storyboard */; };
+		0AE9A7BA1CBF926700A6CCE4 /* ZHYCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE9A7B91CBF926700A6CCE4 /* ZHYCircleView.m */; };
+		0AE9A7BD1CBF928C00A6CCE4 /* ZHYCircleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE9A7BC1CBF928C00A6CCE4 /* ZHYCircleAnimation.m */; };
+		0AFD05261CBF700F00C4BB1C /* ZHYSettingsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD05251CBF700F00C4BB1C /* ZHYSettingsTableController.m */; };
+		0AFD05291CBF73BB00C4BB1C /* ZHYFocusDurationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD05281CBF73BB00C4BB1C /* ZHYFocusDurationController.m */; };
+		0AFD052C1CBF763C00C4BB1C /* ZHYSelectItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD052B1CBF763C00C4BB1C /* ZHYSelectItem.m */; };
+		0AFD052F1CBF7D1A00C4BB1C /* ZHYBreakDurationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD052E1CBF7D1A00C4BB1C /* ZHYBreakDurationController.m */; };
+		0AFD05321CBF7D5500C4BB1C /* ZHYLongBreakController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD05311CBF7D5500C4BB1C /* ZHYLongBreakController.m */; };
+		0AFD05351CBF82CA00C4BB1C /* ZHYFrequencyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD05341CBF82CA00C4BB1C /* ZHYFrequencyController.m */; };
+		0AFD05381CBF842900C4BB1C /* ZHYLengthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD05371CBF842900C4BB1C /* ZHYLengthController.m */; };
+		0AFFBCC01CBE7F86004D672B /* ZHYBaseSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFFBCBF1CBE7F86004D672B /* ZHYBaseSettingController.m */; };
+		0AFFBCC31CBE8003004D672B /* ZHYBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFFBCC21CBE8003004D672B /* ZHYBaseTableView.m */; };
+		F8BB07660C9F378AE69514B0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5BEA8EBF85D45228F700C3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A1E05AF1CE47A3F004334BC /* Focus_Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Focus_Time.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A1E05B31CE47A3F004334BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0A1E05B51CE47A3F004334BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		0A1E05B61CE47A3F004334BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0A1E05B81CE47A3F004334BC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0A1E05B91CE47A3F004334BC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0A1E05BC1CE47A3F004334BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0A1E05BE1CE47A3F004334BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0A1E05C11CE47A3F004334BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0A1E05C31CE47A3F004334BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05EFAF0559D294F5C2A654DB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		0A21D0BA1CBB49390098651A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0A21D0C21CBB4D490098651A /* UIView+ZHYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZHYExtension.h"; sourceTree = "<group>"; };
+		0A21D0C31CBB4D490098651A /* UIView+ZHYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZHYExtension.m"; sourceTree = "<group>"; };
+		0A21D0C91CBB50E80098651A /* ZHYMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYMenuButton.h; sourceTree = "<group>"; };
+		0A21D0CA1CBB50E80098651A /* ZHYMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYMenuButton.m; sourceTree = "<group>"; };
+		0A21D0CC1CBB51670098651A /* ZHYSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYSettingController.h; sourceTree = "<group>"; };
+		0A21D0CD1CBB51670098651A /* ZHYSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYSettingController.m; sourceTree = "<group>"; };
+		0A21D0CE1CBB51670098651A /* ZHYSettingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHYSettingController.xib; sourceTree = "<group>"; };
+		0A21D0D41CBB5DB90098651A /* ZHYSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYSettingCell.h; sourceTree = "<group>"; };
+		0A21D0D51CBB5DB90098651A /* ZHYSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYSettingCell.m; sourceTree = "<group>"; };
+		0A21D0D61CBB5DB90098651A /* ZHYSettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHYSettingCell.xib; sourceTree = "<group>"; };
+		0A21D0DB1CBB5E960098651A /* ZHYSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYSettingItem.h; sourceTree = "<group>"; };
+		0A21D0DC1CBB5E960098651A /* ZHYSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYSettingItem.m; sourceTree = "<group>"; };
+		0A21D0DE1CBB7C320098651A /* ZHYNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYNavController.h; sourceTree = "<group>"; };
+		0A21D0DF1CBB7C320098651A /* ZHYNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYNavController.m; sourceTree = "<group>"; };
+		0A2523911CBDF83D00437C00 /* ZHYSettingBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYSettingBaseCell.h; sourceTree = "<group>"; };
+		0A2523921CBDF83D00437C00 /* ZHYSettingBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYSettingBaseCell.m; sourceTree = "<group>"; };
+		0A2523941CBDF9D500437C00 /* ZHYGroupItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYGroupItem.h; sourceTree = "<group>"; };
+		0A2523951CBDF9D500437C00 /* ZHYGroupItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYGroupItem.m; sourceTree = "<group>"; };
+		0A2523971CBE05EB00437C00 /* ZHYArrowItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYArrowItem.h; sourceTree = "<group>"; };
+		0A2523981CBE05EB00437C00 /* ZHYArrowItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYArrowItem.m; sourceTree = "<group>"; };
+		0A25239A1CBE073900437C00 /* ZHYSwitchItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYSwitchItem.h; sourceTree = "<group>"; };
+		0A25239B1CBE073900437C00 /* ZHYSwitchItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYSwitchItem.m; sourceTree = "<group>"; };
+		0A2C01BD1CC739A3006CFB6D /* ZHYCollectionCellModelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYCollectionCellModelItem.h; sourceTree = "<group>"; };
+		0A2C01BE1CC739A3006CFB6D /* ZHYCollectionCellModelItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYCollectionCellModelItem.m; sourceTree = "<group>"; };
+		0A2C01C01CC76743006CFB6D /* ZHYTimeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYTimeLabel.h; sourceTree = "<group>"; };
+		0A2C01C11CC76743006CFB6D /* ZHYTimeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYTimeLabel.m; sourceTree = "<group>"; };
+		0A2C01C31CC7715F006CFB6D /* ZHYCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYCalendarView.h; sourceTree = "<group>"; };
+		0A2C01C41CC7715F006CFB6D /* ZHYCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYCalendarView.m; sourceTree = "<group>"; };
+		0A57FE5F1CC8ACB70075ED1F /* SingleTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleTools.h; sourceTree = "<group>"; };
+		0A57FE6C1CC8CF820075ED1F /* UINavigationController+ZHYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+ZHYExtension.h"; sourceTree = "<group>"; };
+		0A57FE6D1CC8CF820075ED1F /* UINavigationController+ZHYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+ZHYExtension.m"; sourceTree = "<group>"; };
+		0A6D48CE1CC4985A000BB4D4 /* ZHYMainCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYMainCollectionController.h; sourceTree = "<group>"; };
+		0A6D48CF1CC4985A000BB4D4 /* ZHYMainCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYMainCollectionController.m; sourceTree = "<group>"; };
+		0A6D48D61CC4BCBE000BB4D4 /* ZHYCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYCollectionViewCell.h; sourceTree = "<group>"; };
+		0A6D48D71CC4BCBE000BB4D4 /* ZHYCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYCollectionViewCell.m; sourceTree = "<group>"; };
+		0A82D0291CC8DCAC00E86524 /* ZHYTimeCountDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYTimeCountDownView.h; sourceTree = "<group>"; };
+		0A82D02A1CC8DCAC00E86524 /* ZHYTimeCountDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYTimeCountDownView.m; sourceTree = "<group>"; };
+		0A82D02C1CC8E40C00E86524 /* DefaultThin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DefaultThin.otf; sourceTree = "<group>"; };
+		0ACE53E31CBB446400C20F8F /* Focus Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Focus Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ACE53E71CBB446400C20F8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0ACE53E91CBB446400C20F8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0ACE53EA1CBB446400C20F8F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0ACE53F21CBB446400C20F8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0ACE53F51CBB446400C20F8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0ACE53F71CBB446400C20F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AE9A7B81CBF926700A6CCE4 /* ZHYCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYCircleView.h; sourceTree = "<group>"; };
+		0AE9A7B91CBF926700A6CCE4 /* ZHYCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYCircleView.m; sourceTree = "<group>"; };
+		0AE9A7BB1CBF928C00A6CCE4 /* ZHYCircleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYCircleAnimation.h; sourceTree = "<group>"; };
+		0AE9A7BC1CBF928C00A6CCE4 /* ZHYCircleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYCircleAnimation.m; sourceTree = "<group>"; };
+		0AFD05241CBF700F00C4BB1C /* ZHYSettingsTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYSettingsTableController.h; sourceTree = "<group>"; };
+		0AFD05251CBF700F00C4BB1C /* ZHYSettingsTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYSettingsTableController.m; sourceTree = "<group>"; };
+		0AFD05271CBF73BB00C4BB1C /* ZHYFocusDurationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYFocusDurationController.h; sourceTree = "<group>"; };
+		0AFD05281CBF73BB00C4BB1C /* ZHYFocusDurationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYFocusDurationController.m; sourceTree = "<group>"; };
+		0AFD052A1CBF763C00C4BB1C /* ZHYSelectItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYSelectItem.h; sourceTree = "<group>"; };
+		0AFD052B1CBF763C00C4BB1C /* ZHYSelectItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYSelectItem.m; sourceTree = "<group>"; };
+		0AFD052D1CBF7D1A00C4BB1C /* ZHYBreakDurationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYBreakDurationController.h; sourceTree = "<group>"; };
+		0AFD052E1CBF7D1A00C4BB1C /* ZHYBreakDurationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYBreakDurationController.m; sourceTree = "<group>"; };
+		0AFD05301CBF7D5500C4BB1C /* ZHYLongBreakController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYLongBreakController.h; sourceTree = "<group>"; };
+		0AFD05311CBF7D5500C4BB1C /* ZHYLongBreakController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYLongBreakController.m; sourceTree = "<group>"; };
+		0AFD05331CBF82CA00C4BB1C /* ZHYFrequencyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYFrequencyController.h; sourceTree = "<group>"; };
+		0AFD05341CBF82CA00C4BB1C /* ZHYFrequencyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYFrequencyController.m; sourceTree = "<group>"; };
+		0AFD05361CBF842900C4BB1C /* ZHYLengthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYLengthController.h; sourceTree = "<group>"; };
+		0AFD05371CBF842900C4BB1C /* ZHYLengthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYLengthController.m; sourceTree = "<group>"; };
+		0AFFBCBE1CBE7F86004D672B /* ZHYBaseSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYBaseSettingController.h; sourceTree = "<group>"; };
+		0AFFBCBF1CBE7F86004D672B /* ZHYBaseSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYBaseSettingController.m; sourceTree = "<group>"; };
+		0AFFBCC11CBE8003004D672B /* ZHYBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYBaseTableView.h; sourceTree = "<group>"; };
+		0AFFBCC21CBE8003004D672B /* ZHYBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYBaseTableView.m; sourceTree = "<group>"; };
+		0B5BEA8EBF85D45228F700C3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C0B993626D763DDF9FBDEEA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0A1E05AC1CE47A3F004334BC /* Frameworks */ = {
+		0ACE53E01CBB446400C20F8F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8BB07660C9F378AE69514B0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A1E05A61CE47A3F004334BC = {
+		09B4CC697C9E284BD75DE693 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0A1E05B11CE47A3F004334BC /* Focus_Time */,
-				0A1E05B01CE47A3F004334BC /* Products */,
+				0B5BEA8EBF85D45228F700C3 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A01CD991CCE33D500EE7661 /* BaseSettingVC */ = {
+			isa = PBXGroup;
+			children = (
+				0AFFBCBE1CBE7F86004D672B /* ZHYBaseSettingController.h */,
+				0AFFBCBF1CBE7F86004D672B /* ZHYBaseSettingController.m */,
+			);
+			name = BaseSettingVC;
+			sourceTree = "<group>";
+		};
+		0A01CD9A1CCE340200EE7661 /* OtherSettingVC */ = {
+			isa = PBXGroup;
+			children = (
+				0AFD05241CBF700F00C4BB1C /* ZHYSettingsTableController.h */,
+				0AFD05251CBF700F00C4BB1C /* ZHYSettingsTableController.m */,
+				0AFD05271CBF73BB00C4BB1C /* ZHYFocusDurationController.h */,
+				0AFD05281CBF73BB00C4BB1C /* ZHYFocusDurationController.m */,
+				0AFD052D1CBF7D1A00C4BB1C /* ZHYBreakDurationController.h */,
+				0AFD052E1CBF7D1A00C4BB1C /* ZHYBreakDurationController.m */,
+				0AFD05301CBF7D5500C4BB1C /* ZHYLongBreakController.h */,
+				0AFD05311CBF7D5500C4BB1C /* ZHYLongBreakController.m */,
+				0AFD05331CBF82CA00C4BB1C /* ZHYFrequencyController.h */,
+				0AFD05341CBF82CA00C4BB1C /* ZHYFrequencyController.m */,
+				0AFD05361CBF842900C4BB1C /* ZHYLengthController.h */,
+				0AFD05371CBF842900C4BB1C /* ZHYLengthController.m */,
+			);
+			name = OtherSettingVC;
+			sourceTree = "<group>";
+		};
+		0A01CD9B1CCE347100EE7661 /* MainSettingVC */ = {
+			isa = PBXGroup;
+			children = (
+				0A21D0DE1CBB7C320098651A /* ZHYNavController.h */,
+				0A21D0DF1CBB7C320098651A /* ZHYNavController.m */,
+				0A21D0CC1CBB51670098651A /* ZHYSettingController.h */,
+				0A21D0CD1CBB51670098651A /* ZHYSettingController.m */,
+				0A21D0CE1CBB51670098651A /* ZHYSettingController.xib */,
+			);
+			name = MainSettingVC;
+			sourceTree = "<group>";
+		};
+		0A21D0A51CBB484D0098651A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0A21D0A61CBB484D0098651A /* Main */,
+				0A21D0B61CBB484D0098651A /* Setting */,
+				0A21D0B21CBB484D0098651A /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0A21D0A61CBB484D0098651A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0A21D0A71CBB484D0098651A /* Controller */,
+				0A2C01BC1CC64678006CFB6D /* Model */,
+				0A21D0A91CBB484D0098651A /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0A21D0A71CBB484D0098651A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0A6D48CE1CC4985A000BB4D4 /* ZHYMainCollectionController.h */,
+				0A6D48CF1CC4985A000BB4D4 /* ZHYMainCollectionController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0A21D0A91CBB484D0098651A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A21D0C91CBB50E80098651A /* ZHYMenuButton.h */,
+				0A21D0CA1CBB50E80098651A /* ZHYMenuButton.m */,
+				0AE9A7B81CBF926700A6CCE4 /* ZHYCircleView.h */,
+				0AE9A7B91CBF926700A6CCE4 /* ZHYCircleView.m */,
+				0AE9A7BB1CBF928C00A6CCE4 /* ZHYCircleAnimation.h */,
+				0AE9A7BC1CBF928C00A6CCE4 /* ZHYCircleAnimation.m */,
+				0A2C01C31CC7715F006CFB6D /* ZHYCalendarView.h */,
+				0A2C01C41CC7715F006CFB6D /* ZHYCalendarView.m */,
+				0A2C01C01CC76743006CFB6D /* ZHYTimeLabel.h */,
+				0A2C01C11CC76743006CFB6D /* ZHYTimeLabel.m */,
+				0A82D0291CC8DCAC00E86524 /* ZHYTimeCountDownView.h */,
+				0A82D02A1CC8DCAC00E86524 /* ZHYTimeCountDownView.m */,
+				0A6D48D61CC4BCBE000BB4D4 /* ZHYCollectionViewCell.h */,
+				0A6D48D71CC4BCBE000BB4D4 /* ZHYCollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A21D0B21CBB484D0098651A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				0A57FE5E1CC8AC9D0075ED1F /* Tools */,
+				0A21D0BE1CBB4CCE0098651A /* Category */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		0A21D0B61CBB484D0098651A /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				0A21D0B71CBB484D0098651A /* Controller */,
+				0A21D0B81CBB484D0098651A /* Model */,
+				0A21D0B91CBB484D0098651A /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		0A21D0B71CBB484D0098651A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0A01CD9B1CCE347100EE7661 /* MainSettingVC */,
+				0A01CD9A1CCE340200EE7661 /* OtherSettingVC */,
+				0A01CD991CCE33D500EE7661 /* BaseSettingVC */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0A21D0B81CBB484D0098651A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A21D0DB1CBB5E960098651A /* ZHYSettingItem.h */,
+				0A21D0DC1CBB5E960098651A /* ZHYSettingItem.m */,
+				0A2523941CBDF9D500437C00 /* ZHYGroupItem.h */,
+				0A2523951CBDF9D500437C00 /* ZHYGroupItem.m */,
+				0A2523971CBE05EB00437C00 /* ZHYArrowItem.h */,
+				0A2523981CBE05EB00437C00 /* ZHYArrowItem.m */,
+				0A25239A1CBE073900437C00 /* ZHYSwitchItem.h */,
+				0A25239B1CBE073900437C00 /* ZHYSwitchItem.m */,
+				0AFD052A1CBF763C00C4BB1C /* ZHYSelectItem.h */,
+				0AFD052B1CBF763C00C4BB1C /* ZHYSelectItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A21D0B91CBB484D0098651A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A21D0D41CBB5DB90098651A /* ZHYSettingCell.h */,
+				0A21D0D51CBB5DB90098651A /* ZHYSettingCell.m */,
+				0A21D0D61CBB5DB90098651A /* ZHYSettingCell.xib */,
+				0A2523911CBDF83D00437C00 /* ZHYSettingBaseCell.h */,
+				0A2523921CBDF83D00437C00 /* ZHYSettingBaseCell.m */,
+				0AFFBCC11CBE8003004D672B /* ZHYBaseTableView.h */,
+				0AFFBCC21CBE8003004D672B /* ZHYBaseTableView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A21D0BE1CBB4CCE0098651A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0A21D0C21CBB4D490098651A /* UIView+ZHYExtension.h */,
+				0A21D0C31CBB4D490098651A /* UIView+ZHYExtension.m */,
+				0A57FE6C1CC8CF820075ED1F /* UINavigationController+ZHYExtension.h */,
+				0A57FE6D1CC8CF820075ED1F /* UINavigationController+ZHYExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0A2C01BC1CC64678006CFB6D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A2C01BD1CC739A3006CFB6D /* ZHYCollectionCellModelItem.h */,
+				0A2C01BE1CC739A3006CFB6D /* ZHYCollectionCellModelItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A57FE5E1CC8AC9D0075ED1F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0A57FE5F1CC8ACB70075ED1F /* SingleTools.h */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		0ACE53DA1CBB446400C20F8F = {
+			isa = PBXGroup;
+			children = (
+				0ACE53E51CBB446400C20F8F /* Focus_Time */,
+				0ACE53E41CBB446400C20F8F /* Products */,
+				BD4BA03A4BFA50D76BF17C84 /* Pods */,
+				09B4CC697C9E284BD75DE693 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		0A1E05B01CE47A3F004334BC /* Products */ = {
+		0ACE53E41CBB446400C20F8F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A1E05AF1CE47A3F004334BC /* Focus_Time.app */,
+				0ACE53E31CBB446400C20F8F /* Focus Time.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0A1E05B11CE47A3F004334BC /* Focus_Time */ = {
+		0ACE53E51CBB446400C20F8F /* Focus_Time */ = {
 			isa = PBXGroup;
 			children = (
-				0A1E05B51CE47A3F004334BC /* AppDelegate.h */,
-				0A1E05B61CE47A3F004334BC /* AppDelegate.m */,
-				0A1E05B81CE47A3F004334BC /* ViewController.h */,
-				0A1E05B91CE47A3F004334BC /* ViewController.m */,
-				0A1E05BB1CE47A3F004334BC /* Main.storyboard */,
-				0A1E05BE1CE47A3F004334BC /* Assets.xcassets */,
-				0A1E05C01CE47A3F004334BC /* LaunchScreen.storyboard */,
-				0A1E05C31CE47A3F004334BC /* Info.plist */,
-				0A1E05B21CE47A3F004334BC /* Supporting Files */,
+				0A21D0A51CBB484D0098651A /* Classes */,
+				0ACE53E61CBB446400C20F8F /* Supporting Files */,
 			);
 			path = Focus_Time;
 			sourceTree = "<group>";
 		};
-		0A1E05B21CE47A3F004334BC /* Supporting Files */ = {
+		0ACE53E61CBB446400C20F8F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0A1E05B31CE47A3F004334BC /* main.m */,
+				0A82D02C1CC8E40C00E86524 /* DefaultThin.otf */,
+				0ACE53E91CBB446400C20F8F /* AppDelegate.h */,
+				0ACE53EA1CBB446400C20F8F /* AppDelegate.m */,
+				0ACE53F21CBB446400C20F8F /* Assets.xcassets */,
+				0ACE53F41CBB446400C20F8F /* LaunchScreen.storyboard */,
+				0ACE53F71CBB446400C20F8F /* Info.plist */,
+				0A21D0BA1CBB49390098651A /* PrefixHeader.pch */,
+				0ACE53E71CBB446400C20F8F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BD4BA03A4BFA50D76BF17C84 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05EFAF0559D294F5C2A654DB /* Pods.debug.xcconfig */,
+				9C0B993626D763DDF9FBDEEA /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0A1E05AE1CE47A3F004334BC /* Focus_Time */ = {
+		0ACE53E21CBB446400C20F8F /* Focus_Time */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A1E05C61CE47A3F004334BC /* Build configuration list for PBXNativeTarget "Focus_Time" */;
+			buildConfigurationList = 0ACE53FA1CBB446400C20F8F /* Build configuration list for PBXNativeTarget "Focus_Time" */;
 			buildPhases = (
-				0A1E05AB1CE47A3F004334BC /* Sources */,
-				0A1E05AC1CE47A3F004334BC /* Frameworks */,
-				0A1E05AD1CE47A3F004334BC /* Resources */,
+				C08A8298DE0818FCF1263277 /* Check Pods Manifest.lock */,
+				0ACE53DF1CBB446400C20F8F /* Sources */,
+				0ACE53E01CBB446400C20F8F /* Frameworks */,
+				0ACE53E11CBB446400C20F8F /* Resources */,
+				AC5623EC9F73B7FEA96DEAD3 /* Embed Pods Frameworks */,
+				763DA7CF78045AF8C0D7B25F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,24 +388,26 @@
 			);
 			name = Focus_Time;
 			productName = Focus_Time;
-			productReference = 0A1E05AF1CE47A3F004334BC /* Focus_Time.app */;
+			productReference = 0ACE53E31CBB446400C20F8F /* Focus Time.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0A1E05A71CE47A3F004334BC /* Project object */ = {
+		0ACE53DB1CBB446400C20F8F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZHY;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = SWUST;
 				TargetAttributes = {
-					0A1E05AE1CE47A3F004334BC = {
+					0ACE53E21CBB446400C20F8F = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 4LX6G4532A;
 					};
 				};
 			};
-			buildConfigurationList = 0A1E05AA1CE47A3F004334BC /* Build configuration list for PBXProject "Focus_Time" */;
+			buildConfigurationList = 0ACE53DE1CBB446400C20F8F /* Build configuration list for PBXProject "Focus_Time" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -121,55 +415,124 @@
 				en,
 				Base,
 			);
-			mainGroup = 0A1E05A61CE47A3F004334BC;
-			productRefGroup = 0A1E05B01CE47A3F004334BC /* Products */;
+			mainGroup = 0ACE53DA1CBB446400C20F8F;
+			productRefGroup = 0ACE53E41CBB446400C20F8F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0A1E05AE1CE47A3F004334BC /* Focus_Time */,
+				0ACE53E21CBB446400C20F8F /* Focus_Time */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0A1E05AD1CE47A3F004334BC /* Resources */ = {
+		0ACE53E11CBB446400C20F8F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A1E05C21CE47A3F004334BC /* LaunchScreen.storyboard in Resources */,
-				0A1E05BF1CE47A3F004334BC /* Assets.xcassets in Resources */,
-				0A1E05BD1CE47A3F004334BC /* Main.storyboard in Resources */,
+				0A21D0D81CBB5DB90098651A /* ZHYSettingCell.xib in Resources */,
+				0A21D0D01CBB51670098651A /* ZHYSettingController.xib in Resources */,
+				0A82D02D1CC8E40C00E86524 /* DefaultThin.otf in Resources */,
+				0ACE53F61CBB446400C20F8F /* LaunchScreen.storyboard in Resources */,
+				0ACE53F31CBB446400C20F8F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		763DA7CF78045AF8C0D7B25F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC5623EC9F73B7FEA96DEAD3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C08A8298DE0818FCF1263277 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		0A1E05AB1CE47A3F004334BC /* Sources */ = {
+		0ACE53DF1CBB446400C20F8F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A1E05BA1CE47A3F004334BC /* ViewController.m in Sources */,
-				0A1E05B71CE47A3F004334BC /* AppDelegate.m in Sources */,
-				0A1E05B41CE47A3F004334BC /* main.m in Sources */,
+				0A2523961CBDF9D500437C00 /* ZHYGroupItem.m in Sources */,
+				0AFD05381CBF842900C4BB1C /* ZHYLengthController.m in Sources */,
+				0A21D0CF1CBB51670098651A /* ZHYSettingController.m in Sources */,
+				0A2C01BF1CC739A3006CFB6D /* ZHYCollectionCellModelItem.m in Sources */,
+				0AE9A7BA1CBF926700A6CCE4 /* ZHYCircleView.m in Sources */,
+				0A2523991CBE05EB00437C00 /* ZHYArrowItem.m in Sources */,
+				0A21D0C41CBB4D490098651A /* UIView+ZHYExtension.m in Sources */,
+				0A6D48D01CC4985A000BB4D4 /* ZHYMainCollectionController.m in Sources */,
+				0A25239C1CBE073900437C00 /* ZHYSwitchItem.m in Sources */,
+				0A21D0D71CBB5DB90098651A /* ZHYSettingCell.m in Sources */,
+				0A21D0E01CBB7C320098651A /* ZHYNavController.m in Sources */,
+				0A82D02B1CC8DCAC00E86524 /* ZHYTimeCountDownView.m in Sources */,
+				0AFD052F1CBF7D1A00C4BB1C /* ZHYBreakDurationController.m in Sources */,
+				0AFD05261CBF700F00C4BB1C /* ZHYSettingsTableController.m in Sources */,
+				0ACE53EB1CBB446400C20F8F /* AppDelegate.m in Sources */,
+				0AFD052C1CBF763C00C4BB1C /* ZHYSelectItem.m in Sources */,
+				0A57FE6E1CC8CF820075ED1F /* UINavigationController+ZHYExtension.m in Sources */,
+				0AFD05321CBF7D5500C4BB1C /* ZHYLongBreakController.m in Sources */,
+				0A2523931CBDF83D00437C00 /* ZHYSettingBaseCell.m in Sources */,
+				0AFFBCC31CBE8003004D672B /* ZHYBaseTableView.m in Sources */,
+				0A21D0CB1CBB50E80098651A /* ZHYMenuButton.m in Sources */,
+				0A6D48D81CC4BCBE000BB4D4 /* ZHYCollectionViewCell.m in Sources */,
+				0A2C01C21CC76743006CFB6D /* ZHYTimeLabel.m in Sources */,
+				0AE9A7BD1CBF928C00A6CCE4 /* ZHYCircleAnimation.m in Sources */,
+				0AFD05351CBF82CA00C4BB1C /* ZHYFrequencyController.m in Sources */,
+				0ACE53E81CBB446400C20F8F /* main.m in Sources */,
+				0A2C01C51CC7715F006CFB6D /* ZHYCalendarView.m in Sources */,
+				0A21D0DD1CBB5E960098651A /* ZHYSettingItem.m in Sources */,
+				0AFD05291CBF73BB00C4BB1C /* ZHYFocusDurationController.m in Sources */,
+				0AFFBCC01CBE7F86004D672B /* ZHYBaseSettingController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0A1E05BB1CE47A3F004334BC /* Main.storyboard */ = {
+		0ACE53F41CBB446400C20F8F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0A1E05BC1CE47A3F004334BC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0A1E05C01CE47A3F004334BC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0A1E05C11CE47A3F004334BC /* Base */,
+				0ACE53F51CBB446400C20F8F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -177,7 +540,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0A1E05C41CE47A3F004334BC /* Debug */ = {
+		0ACE53F81CBB446400C20F8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -195,7 +558,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Haoyang Zhu (R2SLJVHXEB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Haoyang Zhu (R2SLJVHXEB)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -217,11 +581,12 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "a4544c5b-6378-4291-a6b1-5a621dafe307";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		0A1E05C51CE47A3F004334BC /* Release */ = {
+		0ACE53F91CBB446400C20F8F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -239,7 +604,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Haoyang Zhu (R2SLJVHXEB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Haoyang Zhu (R2SLJVHXEB)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -254,54 +620,70 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "a4544c5b-6378-4291-a6b1-5a621dafe307";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		0A1E05C71CE47A3F004334BC /* Debug */ = {
+		0ACE53FB1CBB446400C20F8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05EFAF0559D294F5C2A654DB /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Haoyang Zhu (R2SLJVHXEB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Haoyang Zhu (R2SLJVHXEB)";
+				GCC_PREFIX_HEADER = Focus_Time/PrefixHeader.pch;
 				INFOPLIST_FILE = Focus_Time/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Haoyang.Zhu.Focus-Time";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Focus Time";
+				PROVISIONING_PROFILE = "a4544c5b-6378-4291-a6b1-5a621dafe307";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		0A1E05C81CE47A3F004334BC /* Release */ = {
+		0ACE53FC1CBB446400C20F8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C0B993626D763DDF9FBDEEA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Haoyang Zhu (R2SLJVHXEB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Haoyang Zhu (R2SLJVHXEB)";
+				GCC_PREFIX_HEADER = Focus_Time/PrefixHeader.pch;
 				INFOPLIST_FILE = Focus_Time/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Haoyang.Zhu.Focus-Time";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Focus Time";
+				PROVISIONING_PROFILE = "a4544c5b-6378-4291-a6b1-5a621dafe307";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0A1E05AA1CE47A3F004334BC /* Build configuration list for PBXProject "Focus_Time" */ = {
+		0ACE53DE1CBB446400C20F8F /* Build configuration list for PBXProject "Focus_Time" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A1E05C41CE47A3F004334BC /* Debug */,
-				0A1E05C51CE47A3F004334BC /* Release */,
+				0ACE53F81CBB446400C20F8F /* Debug */,
+				0ACE53F91CBB446400C20F8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A1E05C61CE47A3F004334BC /* Build configuration list for PBXNativeTarget "Focus_Time" */ = {
+		0ACE53FA1CBB446400C20F8F /* Build configuration list for PBXNativeTarget "Focus_Time" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A1E05C71CE47A3F004334BC /* Debug */,
-				0A1E05C81CE47A3F004334BC /* Release */,
+				0ACE53FB1CBB446400C20F8F /* Debug */,
+				0ACE53FC1CBB446400C20F8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0A1E05A71CE47A3F004334BC /* Project object */;
+	rootObject = 0ACE53DB1CBB446400C20F8F /* Project object */;
 }

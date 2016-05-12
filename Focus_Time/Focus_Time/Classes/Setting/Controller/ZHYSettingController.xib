@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZHYSettingController">
+            <connections>
+                <outlet property="settingTableView" destination="EZ7-OX-Esl" id="uuf-8I-X7E"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Efa-wM-G26" userLabel="HeaderView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="348"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_IMG" translatesAutoresizingMaskIntoConstraints="NO" id="W5H-eB-VIE" userLabel="小番茄图标">
+                            <rect key="frame" x="265" y="139" width="70" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="Pzh-fk-x0o"/>
+                                <constraint firstAttribute="width" constant="70" id="QOU-fd-mk6"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqc-5o-wDG">
+                            <rect key="frame" x="0.0" y="259" width="600" height="29"/>
+                            <string key="text">Great minds have purpose, others have wishes.
+Stay focused and follow your heart</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fouce Time" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TnS-a5-18U">
+                            <rect key="frame" x="0.0" y="225" width="600" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="fqc-5o-wDG" firstAttribute="leading" secondItem="Efa-wM-G26" secondAttribute="leading" id="12Q-ky-83s"/>
+                        <constraint firstItem="TnS-a5-18U" firstAttribute="centerX" secondItem="Efa-wM-G26" secondAttribute="centerX" id="31W-0c-KO1"/>
+                        <constraint firstItem="W5H-eB-VIE" firstAttribute="centerX" secondItem="Efa-wM-G26" secondAttribute="centerX" id="7Fz-GN-jlV"/>
+                        <constraint firstAttribute="trailing" secondItem="TnS-a5-18U" secondAttribute="trailing" id="AaA-P6-pLe"/>
+                        <constraint firstItem="TnS-a5-18U" firstAttribute="top" secondItem="W5H-eB-VIE" secondAttribute="bottom" constant="16" id="BJI-yG-kgm"/>
+                        <constraint firstItem="W5H-eB-VIE" firstAttribute="centerY" secondItem="Efa-wM-G26" secondAttribute="centerY" id="LzQ-Nd-Wdc"/>
+                        <constraint firstItem="fqc-5o-wDG" firstAttribute="centerX" secondItem="Efa-wM-G26" secondAttribute="centerX" id="RJn-Xi-lLK"/>
+                        <constraint firstItem="TnS-a5-18U" firstAttribute="leading" secondItem="Efa-wM-G26" secondAttribute="leading" id="g1x-Wl-GNh"/>
+                        <constraint firstItem="fqc-5o-wDG" firstAttribute="top" secondItem="TnS-a5-18U" secondAttribute="bottom" constant="14" id="r0P-du-HB2"/>
+                        <constraint firstAttribute="trailing" secondItem="fqc-5o-wDG" secondAttribute="trailing" id="uIL-a6-Den"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aq4-ad-8Ji" userLabel="Close" customClass="ZHYMenuButton">
+                    <rect key="frame" x="0.0" y="20" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="LWi-bc-udY"/>
+                        <constraint firstAttribute="width" constant="60" id="Ykq-La-azR"/>
+                    </constraints>
+                    <state key="normal" image="close"/>
+                    <connections>
+                        <action selector="closeButtonClick" destination="-1" eventType="touchUpInside" id="kk4-uB-vR1"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EZ7-OX-Esl">
+                    <rect key="frame" x="0.0" y="362" width="600" height="200"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="uMa-l6-6TI"/>
+                    </constraints>
+                    <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haoyang.Zhu" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTv-xd-RXz" userLabel="底部lebal">
+                    <rect key="frame" x="0.0" y="562" width="600" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="elz-rh-O2R"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="WTv-xd-RXz" secondAttribute="bottom" id="AYh-uo-Bhi"/>
+                <constraint firstItem="Efa-wM-G26" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Its-V3-oZE"/>
+                <constraint firstAttribute="trailing" secondItem="WTv-xd-RXz" secondAttribute="trailing" id="MDI-mV-uHh"/>
+                <constraint firstItem="Efa-wM-G26" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NWb-eY-aDz"/>
+                <constraint firstAttribute="trailing" secondItem="EZ7-OX-Esl" secondAttribute="trailing" id="SV2-a9-UBh"/>
+                <constraint firstItem="WTv-xd-RXz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VnF-Mu-SUe"/>
+                <constraint firstItem="aq4-ad-8Ji" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="adP-Ep-W5n"/>
+                <constraint firstItem="EZ7-OX-Esl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dnP-NF-tfu"/>
+                <constraint firstItem="WTv-xd-RXz" firstAttribute="top" secondItem="EZ7-OX-Esl" secondAttribute="bottom" id="fsM-yg-MoJ"/>
+                <constraint firstItem="Efa-wM-G26" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.58" id="giO-u6-use"/>
+                <constraint firstItem="aq4-ad-8Ji" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="hVF-eQ-gR8"/>
+                <constraint firstAttribute="trailing" secondItem="Efa-wM-G26" secondAttribute="trailing" id="uL3-JB-EuR"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <point key="canvasLocation" x="268" y="327"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close" width="26" height="26"/>
+        <image name="icon_IMG" width="180" height="180"/>
+    </resources>
+</document>
